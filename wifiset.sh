@@ -1,21 +1,10 @@
-
-#wifi_set
-echo "PRESS [ENTER] TO CONTINUE THE INSTALLATION"
-echo "IF YOU WANT TO CANCEL, PRESS [CTRL] + [C]"
-read
-
 echo "[Update the package lists]"
 
 sudo apt update -y
 sudo apt upgrade -y
-
-echo "[Update the package lists]"
-
 git clone https://github.com/HRex39/rtl8852be.git
-cd $HOME/rtl8852be 
-make -j8 
+cd $HOME/rtl8852be
+make -j8
 sudo make install
 sudo modprobe 8852be
-
-echo "[Complete!!!]"
 exit 0
