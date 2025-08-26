@@ -17,7 +17,7 @@ name_catkin_workspace=${name_catkin_workspace:="catkin_ws"}
 echo "[Update the package lists]"
 sudo apt update -y
 
-sudo apt-get install gparted
+sudo apt-get install gparted -y
 
 echo "[Install build environment, the chrony, ntpdate and set the ntpdate]"
 sudo apt install -y chrony ntpdate curl build-essential net-tools nmap
@@ -46,7 +46,7 @@ fi
 echo "[Update the package lists]"
 sudo apt update -y
 
-sudo apt install libudev-dev
+sudo apt install libudev-dev -y
 
 echo "[Install ros-desktop-full version of Noetic"
 sudo apt install -y ros-$name_ros_version-desktop-full
@@ -151,3 +151,4 @@ source /etc/bash.bashrc
 source $HOME/.bashrc
 echo "[Complete!!!]"
 exit 0
+
