@@ -84,6 +84,7 @@ sh -c "echo \"alias gp='git pull'\" >> ~/.bashrc"
 sh -c "echo \"alias cw='cd ~/$name_catkin_workspace'\" >> ~/.bashrc"
 sh -c "echo \"alias cs='cd ~/$name_catkin_workspace/src'\" >> ~/.bashrc"
 sh -c "echo \"alias cm='cd ~/$name_catkin_workspace && catkin_make'\" >> ~/.bashrc"
+sh -c "echo \"alias robot='roslaunch camera autorace.launch'\" >> ~/.bashrc"
 
 sh -c "echo \"source /opt/ros/$name_ros_version/setup.bash\" >> ~/.bashrc"
 sh -c "echo \"source ~/$name_catkin_workspace/devel/setup.bash\" >> ~/.bashrc"
@@ -149,6 +150,8 @@ sudo sh -c "echo \"export PKG_CONFIG_PATH\" >> /etc/bash.bashrc"
 source /etc/bash.bashrc
 
 source $HOME/.bashrc
+source ~/.bashrc
 echo "[Complete!!!]"
 exit 0
+
 
